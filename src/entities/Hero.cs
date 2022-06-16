@@ -24,7 +24,7 @@ namespace game_jpg.src.entities
             return $"Name: {this.Name} - Level: {this.Level} - Type: {this.HeroType}";
         }
 
-        public string Attack() {
+        public virtual string Attack() {
             return $"{this.Name} atacou com a sua espada"; 
         }
     }
