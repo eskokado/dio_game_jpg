@@ -7,6 +7,7 @@ class Program {
 
     Console.WriteLine(arus.Attack());
     Console.WriteLine(wizard.Attack());
+    Console.WriteLine(wizard.Attack(100));
   }
 }
 

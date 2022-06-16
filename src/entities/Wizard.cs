@@ -16,5 +16,9 @@ namespace game_jpg.src.entities
         public override string Attack() {
             return $"{this.Name} lançou magia"; 
         }
+
+        public string Attack(int bonus) {
+            return $"{this.Name} lançou magia com bonus de ataque de {bonus}"; 
+        }
     }
 }
