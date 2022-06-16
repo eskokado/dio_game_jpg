@@ -2,10 +2,10 @@
 class Program {
   static void Main(string[] args) 
   {
-    Arus hero = new Arus("Arus", 23, "Knight");
-    Arus wizard = new Arus("Jerônica", 23, "White Wizard"); 
+    Hero arus = new Hero("Arus", 23, "Knight");
+    Hero wizard = new Hero("Jerônica", 23, "White Wizard"); 
 
-    Console.WriteLine(hero.Attack());
+    Console.WriteLine(arus.Attack());
     Console.WriteLine(wizard.Attack());
   }
 }

@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace game_jpg.src.entities
 {
-    public class Arus
+    public class Hero
     {
-        public Arus()
+        public Hero()
         {            
         }
-        public Arus(string name, int level, string heroType) 
+        public Hero(string name, int level, string heroType) 
         {
             this.Name = name;
             this.Level = level;
