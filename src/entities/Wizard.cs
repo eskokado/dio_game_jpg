@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace game_jpg.src.entities
 {
-    public class Wizard : Hero
+    public abstract class Wizard : Hero
     {
         public Wizard(string name, int level, string heroType)
         {
+            
             this.Name = name;
             this.Level = level;
             this.HeroType = heroType;
@@ -17,7 +18,7 @@ namespace game_jpg.src.entities
             return $"{this.Name} lançou magia"; 
         }
 
-        public string Attack(int bonus) {
+        public virtual string Attack(int bonus) {
             if(bonus > 6) {
                 return $"{this.Name} lançou magia super efetiva com bonus de {bonus}"; 
             } else {
