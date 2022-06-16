@@ -18,7 +18,13 @@ namespace game_jpg.src.entities
         }
 
         public string Attack(int bonus) {
-            return $"{this.Name} lançou magia com bonus de ataque de {bonus}"; 
+            if(bonus > 6) {
+                return $"{this.Name} lançou magia super efetiva com bonus de {bonus}"; 
+            } else {
+                return $"{this.Name} lançou magia força fraca com bonus de {bonus}"; 
+
+            }
+
         }
     }
 }

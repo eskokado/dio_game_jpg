@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace game_jpg.src.entities
 {
-    public class Hero
+    public abstract class Hero
     {
         public Hero()
         {            
