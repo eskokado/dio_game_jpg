@@ -7,6 +7,15 @@ namespace game_jpg.src.entities
 {
     public class Arus
     {
+        public Arus()
+        {            
+        }
+        public Arus(string name, int level, string heroType) 
+        {
+            this.Name = name;
+            this.Level = level;
+            this.HeroType = heroType;
+        }
         public string Name { get; set; }
         public int Level { get; set; }
         public string HeroType { get; set; }
