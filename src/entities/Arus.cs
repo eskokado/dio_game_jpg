@@ -19,5 +19,9 @@ namespace game_jpg.src.entities
         public string Name { get; set; }
         public int Level { get; set; }
         public string HeroType { get; set; }
+
+        public override string ToString() {
+            return $"Name: {this.Name} - Level: {this.Level} - Type: {this.HeroType}";
+        }
     }
 }
